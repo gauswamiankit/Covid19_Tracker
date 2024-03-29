@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".SplashScrenn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_primary">
+        <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_virus" />
+        <ImageView
+            android:id="@+id/virus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_virus"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toStartOf="@id/virus"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_virus"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/covid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:fontFamily="@string/regular"
+                android:textSize="@dimen/title_size3"
+                android:text="COVID 19"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/covid"
+
+                android:layout_alignStart="@+id/covid"
+                android:layout_alignEnd="@+id/covid"
+
+                android:layout_marginStart="0sp"
+                android:layout_marginEnd="0sp"
+                android:fontFamily="@string/regular"
+                android:gravity="center_horizontal"
+                android:text="tracker"
+                android:textColor="@color/red_pie"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_primary_dark"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="@dimen/title_size"
+            android:fontFamily="@string/regular"
+            android:text="BY \n A N K I T"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
